@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 body{
     margin: 0;
+    font-family: 'Alata', sans-serif;
 }
 #pantalla-inicio{
     width: 100vw;
@@ -9,6 +11,54 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#encabezado{
+    background-color:#F12711;
+    height: 8.156rem;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    color: white;
+    
+}
+i{
+    margin-top: 3.125rem;
+    margin-left: 1.25rem;
+}
+.parrafos{
+    text-align: center;
+}
+#mensaje-registro{
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+#formulario-registro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#numero-cel{
+    width: 19.313rem;
+    height: 2.25rem;
+    border: 1px solid #f12711;
+    border-radius: 50px;
+    text-align: center;
+    color: #f17264;
+    margin-top: 3.75rem;
+    margin-bottom: 10rem;
+}
+#check{
+    font-size:small;
+    color: #f17264;
+    margin-bottom: 1.875rem;
+}
+#recibeCodigo{
+    background-color: #F12711;
+    color: white;
+}
+#recibeCodigo:hover{
+    background-color: white;
+    border: 1px solid #F12711;
+    color: #F12711;
 }
 #logo{
     width: 226px;
@@ -21,6 +71,7 @@ body{
     border-radius: 50px;
     width: 214px;
     height: 56px;
+    cursor: pointer;
 }
 #boton-registro{
     background-color:white;
