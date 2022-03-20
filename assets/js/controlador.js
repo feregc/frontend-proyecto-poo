@@ -1,11 +1,5 @@
-// function abrirFormularioRegistro(){
-//     document.getElementById('pantalla-inicio').style.display('none');
-//     // document.getElementById('pantalla-inicio').classList.toggle('visible');
-//     // document.getElementById('header').classList.toggle('visible');
-// }
-// abrirFormularioRegistro();
-// function abrirFormularioLogIn(){
-//     document.getElementById('pantalla-inicio').classList.toggle('visible');
-//     document.getElementById('header').classList.toggle('visible');
-// }
-// abrirFormularioLogIn();
+function abrirFormularioRegistro(){
+    document.getElementById('inicio').classList.toggle('visible');
+    document.getElementById('formulario1').classList.toggle('visible');
+}
+abrirFormularioRegistro();

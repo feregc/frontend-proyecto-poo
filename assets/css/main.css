@@ -90,3 +90,6 @@ i{
     background-color: white;
     color: #F12711;
 }
+.visible{
+    display: block;
+}
