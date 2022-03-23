@@ -36,13 +36,15 @@ i{
     align-items: center;
     flex-direction: column;
 }
-#numero-cel{
-    width: 19.313rem;
+.caja-texto{
     height: 2.25rem;
     border: 1px solid #f12711;
     border-radius: 50px;
     text-align: center;
     color: #f17264;
+}
+#numero-cel{
+    width: 19.313rem;
     margin-top: 3.75rem;
     margin-bottom: 10rem;
 }
@@ -50,15 +52,6 @@ i{
     font-size:small;
     color: #f17264;
     margin-bottom: 1.875rem;
-}
-#recibeCodigo{
-    background-color: #F12711;
-    color: white;
-}
-#recibeCodigo:hover{
-    background-color: white;
-    border: 1px solid #F12711;
-    color: #F12711;
 }
 #logo{
     width: 226px;
@@ -73,11 +66,20 @@ i{
     height: 56px;
     cursor: pointer;
 }
-#boton-registro{
+.boton-Rojo{
+    background-color:#F12711;
+    color: white;
+}
+.boton-Rojo:hover{
+    background-color: white;
+    border: 1px solid #F12711;
+    color: #F12711;
+}
+.boton-blanco{
     background-color:white;
     color:#F12711;
 }
-#boton-registro:hover{
+.boton-blanco:hover{
     background-color:#F12711;
     color: white;
 }
@@ -90,6 +92,27 @@ i{
     background-color: white;
     color: #F12711;
 }
+
 .visible{
-    display: block;
+    display: none;
+}
+
+#nombreCliente{
+    width: 19.313rem;
+    margin-bottom: 1.875rem;
+}
+#apellidoCliente{
+    width: 19.313rem; 
+    margin-bottom: 1.875rem;
+}
+#correoCliente{
+    width: 19.313rem; 
+    margin-bottom: 6.25rem;
+}
+#formulario-registro-2{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

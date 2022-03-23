@@ -16,15 +16,15 @@
     <section id="inicio">
         <div id="pantalla-inicio">
             <img id="logo" src="assets/img/LOGO BLANCO.png" alt="">
-            <input class="boton" id="boton-registro" type="button" value="Regístrate"
-                onclick="abrirFormularioRegistro()">
-            <input class="boton" id="boton-login" type="button" value="Iniciar Sesión" onclick="abrirFormularioLogIn()">
+            <input class="boton boton-blanco" id="boton-registro" type="button" value="Regístrate"
+                onclick="mostrarSeccion('formulario1')">
+            <input class="boton" id="boton-login" type="button" value="Iniciar Sesión" onclick="mostrarSeccion('formulario2')">
         </div>
     </section>
 
-    <section id="formulario1">
+    <section class="visible" id="formulario1">
         <div id="encabezado">
-            <i class="fa-solid fa-arrow-left fa-lg" href="#"></i>
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
             <p class="parrafos">INGRESA TU TELÉFONO</p>
         </div>
         <div id="mensaje-registro">
@@ -33,12 +33,44 @@
             <p class="parrafos" style="color: #F17264;">Te enviaremos un código de verificación</p>
         </div>
         <div id="formulario-registro">
-            <input id="numero-cel" type="text" placeholder="Ingresa tu número">
+            <input class="caja-texto" id="numero-cel" type="text" placeholder="Ingresa tu número">
             <div id="check">
                 <input id="" type="checkbox" id="checkRegistro">
                 <label for="checkRegistro"> He leído y acepto los terminos y condiciones</label>
             </div>
-            <input class="boton" id="recibeCodigo" type="button" value="RECIBIR CÓDIGO">
+            <input class="boton boton-Rojo" id="recibeCodigo" type="button" value="RECIBIR CÓDIGO" onclick="mostrarSeccion('formulario1-1')">
+        </div>
+    </section>
+
+    <section class="visible" id="formulario1-1">
+        <div id="encabezado">
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+            <p class="parrafos">INGRESA TUS DATOS</p>
+        </div>
+        <div id="mensaje-registro">
+            <p class="parrafos" style="color: #F12711; margin-bottom: 0.438rem;">¡Estamos a punto de terminar!</p>
+        </div>
+        <div id="formulario-registro-2">
+            <input class="caja-texto" id="nombreCliente" type="text" placeholder="Nombre">
+            <input class="caja-texto" id="apellidoCliente" type="text" placeholder="Apellido">
+            <input class="caja-texto" id="correoCliente" type="text" placeholder="Corre electrónico">
+            <input class="boton boton-Rojo" id="finalizar" type="button" value="TERMINAR">
+        </div>
+    </section>
+
+    <section class="visible" id="formulario2">
+        <div id="encabezado">
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+            <p class="parrafos">INICIAR SESIÓN</p>
+        </div>
+        <div id="mensaje-registro">
+            <p class="parrafos" style="color: #F12711; margin-bottom: 0.438rem;">Ingresa el número de
+                teléfono</p>
+            <p class="parrafos" style="color: #F17264;">asociado a la cuenta</p>
+        </div>
+        <div id="formulario-registro">
+            <input id="numero-cel" type="text" placeholder="Ingresa tu número">
+            <input class="boton boton-rojo" id="recibeCodigo" type="button" value="RECIBIR CÓDIGO">
         </div>
     </section>
 
