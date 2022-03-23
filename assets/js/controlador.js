@@ -1,5 +1,6 @@
-function abrirFormularioRegistro(){
-    document.getElementById('inicio').classList.toggle('visible');
-    document.getElementById('formulario1').classList.toggle('visible');
+function mostrarSeccion(seccion){
+    document.getElementById('inicio').style.display = "block";
+
+    document.getElementById(seccion).classList.toggle('visible');
+    document.getElementById('inicio').style.display = "none";
 }
-abrirFormularioRegistro();
