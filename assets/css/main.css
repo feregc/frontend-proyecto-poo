@@ -39,8 +39,6 @@ i{
 .caja-texto{
     height: 2.25rem;
     border: 1px solid #f12711;
-    border-radius: 50px;
-    text-align: center;
     color: #f17264;
 }
 #numero-cel{
@@ -96,18 +94,12 @@ i{
 .visible{
     display: none;
 }
-
-#nombreCliente{
+.texto{
     width: 19.313rem;
     margin-bottom: 1.875rem;
-}
-#apellidoCliente{
-    width: 19.313rem; 
-    margin-bottom: 1.875rem;
-}
-#correoCliente{
-    width: 19.313rem; 
-    margin-bottom: 6.25rem;
+    border-radius: 50px;
+    text-align: center;
+    height: 2.25rem;
 }
 #formulario-registro-2{
     margin-left: 30px;
@@ -115,4 +107,17 @@ i{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+#header{
+    width: 100vw;
+    height: 210px;
+    background-color: #F12711;
+}
+#logo1{
+    width: 131px;
+    height: 38px;
+    margin-top: 60px;
+}
+#saludo{
+    margin-left: 8.33vw;
 }
