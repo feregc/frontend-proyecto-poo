@@ -24,7 +24,7 @@
 
     <section class="visible" id="formulario1">
         <div id="encabezado">
-            <i class="fa-solid fa-arrow-left fa-lg"></i>
+            <i id="atras" class="fa-solid fa-arrow-left fa-lg"></i>
             <p class="parrafos">INGRESA TU TELÉFONO</p>
         </div>
         <div id="mensaje-registro">
@@ -44,7 +44,7 @@
 
     <section class="visible" id="formulario1-1">
         <div id="encabezado">
-            <i class="fa-solid fa-arrow-left fa-lg"></i>
+            <i id="atras" class="fa-solid fa-arrow-left fa-lg"></i>
             <p class="parrafos">INGRESA TUS DATOS</p>
         </div>
         <div id="mensaje-registro">
@@ -53,14 +53,14 @@
         <div id="formulario-registro-2">
             <input class="caja-texto caja" id="nombreCliente" type="text" placeholder="Nombre">
             <input class="caja-texto caja" id="apellidoCliente" type="text" placeholder="Apellido">
-            <input class="caja-texto caja" id="correoCliente" type="text" placeholder="Corre electrónico">
+            <input class="caja-texto caja" id="correoCliente" type="email" placeholder="Correo electrónico">
             <input class="boton boton-Rojo" id="finalizar" type="button" value="TERMINAR">
         </div>
     </section>
 
     <section class="visible" id="formulario2">
         <div id="encabezado">
-            <i class="fa-solid fa-arrow-left fa-lg"></i>
+            <i id="atras" class="fa-solid fa-arrow-left fa-lg"></i>
             <p class="parrafos">INICIAR SESIÓN</p>
         </div>
         <div id="mensaje-registro">
@@ -69,42 +69,47 @@
             <p class="parrafos" style="color: #F17264;">asociado a la cuenta</p>
         </div>
         <div id="formulario-registro">
-            <input id="numero-cel" type="text" placeholder="Ingresa tu número">
-            <input class="boton boton-rojo" id="recibeCodigo" type="button" value="RECIBIR CÓDIGO">
+            <input class="caja-texto caja" id="numero-cel" type="text" placeholder="Ingresa tu número">
+            <input class="boton boton-Rojo" id="recibeCodigo" type="button" value="RECIBIR CÓDIGO">
         </div>
     </section> -->
 
-    <section>
+    <section id="home">
         <div id="header">
-            <p style="text-align: center;">
+            <p style="text-align: center;" id="plogo">
                 <img id="logo1" src="assets/img/LOGO BLANCO.png" alt="">
             </p>
-            
+
             <div id="saludo">
-                <p>¡Bienvenido!</p>
-                <input class="texto" type="text" name="" id="" placeholder="¿Qué deseas hoy?">
+                <p style="color: #fff;">¡Bienvenido!</p>
+                <input class="texto buscar-nav" type="text" name="" id="" placeholder="¿Qué deseas hoy?">
             </div>
         </div>
-        <div>
-            <p>Delivery</p>   
-            <div>
-                <i class="fa-regular fa-burger-fries"></i>
+        <div id="categorias">
+            <p class="parrafos" id="titulo1">Delivery</p>
+            <div class="categorias brand">
+                <i class="fa-solid fa-burger fa-3x"></i>
+                Comida Rápida
             </div>
-            <div>
-                <i class="fa-regular fa-mug-marshmallows"></i>
-                <br>
+            <div class="categorias brand">
+                <i class="fa-solid fa-mug-hot fa-3x"></i>
                 Cafés y Panaderías
             </div>
-            <div>
-                <i class="fa-regular fa-hat-chef"></i>
-                <br>
+            <div class="categorias brand">
+                <i class="fa-solid fa-utensils fa-3x"></i>
                 Comida Gourmet
-            </div> 
+            </div>
         </div>
-        <div>
-            <i class="fa-solid fa-house"></i>
-            <i class="fa-solid fa-basket-shopping"></i>
-            <i class="fa-solid fa-user"></i>
+        <div id="barra-nav">
+            <div>
+                <i class="fa-solid fa-house fa-xl"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-basket-shopping fa-xl"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-user fa-xl"></i>
+            </div>
         </div>
     </section>
 
