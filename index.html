@@ -12,19 +12,22 @@
     <script src="https://kit.fontawesome.com/00a121187e.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <!-- <section id="inicio">
+<body onload="esconder()"> 
+    <!-- Landing Page -->
+    <section id="inicio">
         <div id="pantalla-inicio">
             <img id="logo" src="assets/img/LOGO BLANCO.png" alt="">
             <input class="boton boton-blanco" id="boton-registro" type="button" value="Regístrate"
-                onclick="mostrarSeccion('formulario1')">
-            <input class="boton" id="boton-login" type="button" value="Iniciar Sesión" onclick="mostrarSeccion('formulario2')">
+                onclick="mostrarRegistro()">
+            <input class="boton" id="boton-login" type="button" value="Iniciar Sesión"
+                onclick="mostrarLogIn()">
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="" id="formulario1">
+    <!-- Formulario de Registro -->
+    <section id="formulario1">
         <div id="encabezado">
-            <i id="atras" class="fa-solid fa-arrow-left fa-lg"></i>
+            <i id="atras" class="fa-solid fa-arrow-left fa-lg" onclick="atrasLP()"></i>
             <p class="parrafos">INGRESA TU TELÉFONO</p>
         </div>
         <div id="mensaje-registro">
@@ -38,13 +41,15 @@
                 <input id="" type="checkbox" id="checkRegistro">
                 <label for="checkRegistro"> He leído y acepto los terminos y condiciones</label>
             </div>
-            <input class="boton boton-Rojo" id="recibeCodigo" type="button" value="RECIBIR CÓDIGO" onclick="mostrarSeccion('formulario1-1')">
+            <input class="boton boton-Rojo" id="recibeCodigo" type="button" value="RECIBIR CÓDIGO"
+                onclick="mostrarFormReg()">
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="visible" id="formulario1-1">
+    <!-- Formulario de Registro  2-->
+    <section id="formulario1-1">
         <div id="encabezado">
-            <i id="atras" class="fa-solid fa-arrow-left fa-lg"></i>
+            <i id="atras" class="fa-solid fa-arrow-left fa-lg" onclick="atrasLP2()"></i>
             <p class="parrafos">INGRESA TUS DATOS</p>
         </div>
         <div id="mensaje-registro">
@@ -54,13 +59,14 @@
             <input class="caja-texto caja" id="nombreCliente" type="text" placeholder="Nombre">
             <input class="caja-texto caja" id="apellidoCliente" type="text" placeholder="Apellido">
             <input class="caja-texto caja" id="correoCliente" type="email" placeholder="Correo electrónico">
-            <input class="boton boton-Rojo" id="finalizar" type="button" value="TERMINAR">
+            <input class="boton boton-Rojo" id="finalizar" type="button" value="TERMINAR" onclick="mostrarHome()">
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="visible" id="formulario2">
+    <!-- Formulario de Inicio de Sesión -->
+    <section id="formulario2">
         <div id="encabezado">
-            <i id="atras" class="fa-solid fa-arrow-left fa-lg"></i>
+            <i id="atras" class="fa-solid fa-arrow-left fa-lg" onclick="atrasLP3()"></i>
             <p class="parrafos">INICIAR SESIÓN</p>
         </div>
         <div id="mensaje-registro">
@@ -70,10 +76,11 @@
         </div>
         <div id="formulario-registro">
             <input class="caja-texto caja" id="numero-cel" type="text" placeholder="Ingresa tu número">
-            <input class="boton boton-Rojo" id="recibeCodigo" type="button" value="RECIBIR CÓDIGO">
+            <input class="boton boton-Rojo" id="recibeCodigo" type="button" value="RECIBIR CÓDIGO" onclick="mostrarHome2()">
         </div>
-    </section> -->
+    </section>
 
+    <!-- Pantalla de inicio de app -->
     <section id="home">
         <div id="header">
             <p style="text-align: center;" id="plogo">
@@ -81,8 +88,8 @@
             </p>
 
             <div id="saludo">
-                <p style="color: #fff;">¡Bienvenido!</p>
-                <input class="texto buscar-nav" type="text" name="" id="" placeholder="¿Qué deseas hoy?">
+                <p class="parrafos" style="color: #fff;">¡Bienvenido!</p>
+                <input class="texto buscar-nav" type="search" name="" id="" placeholder="¿Qué deseas hoy?">
             </div>
         </div>
         <div id="categorias">
@@ -91,11 +98,11 @@
                 <i class="fa-solid fa-burger fa-3x"></i>
                 Comida Rápida
             </div>
-            <div class="categorias brand" onclick="mostrarComidas()">
+            <div class="categorias brand">
                 <i class="fa-solid fa-mug-hot fa-3x"></i>
                 Cafés y Panaderías
             </div>
-            <div class="categorias brand" onclick="mostrarComidas()">
+            <div class="categorias brand">
                 <i class="fa-solid fa-utensils fa-3x"></i>
                 Comida Gourmet
             </div>
@@ -113,6 +120,37 @@
         </div>
     </section>
 
+    <!-- Comidas Rapidas -->
+    <section id="comidasRapidas">
+        <!-- <i id="atras" class="fa-solid fa-arrow-left fa-lg" style="color: #F12711;" onclick="atras()"></i>
+        <div id="encabezadoEmpresas">
+            <p class="parrafos">Comida Rápida</p>
+            <input class="caja caja-texto" type="search" name="" id="" placeholder="Buscar">
+        </div>
+        <div class="container">
+            <div class="row" id="comidas">
+                <div class="col-6">
+                    <div class="card">
+                        <img src="assets/img/logos/burgerking.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title parrafos">Burger King HN<p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative" id="barra-nav">
+            <div>
+                <i class="fa-solid fa-house fa-xl"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-basket-shopping fa-xl"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-user fa-xl"></i>
+            </div>
+        </div> -->
+    </section>
 
     <script src="assets/js/controlador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

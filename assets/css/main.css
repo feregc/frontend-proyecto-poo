@@ -197,3 +197,13 @@ i {
 .buscar-nav::placeholder{
     color: #fff;
 }
+#encabezadoEmpresas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f12711;
+}
+
+.card-title{
+  color: #f12711;
+}
