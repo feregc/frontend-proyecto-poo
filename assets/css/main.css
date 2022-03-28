@@ -42,13 +42,13 @@ body {
   border-radius: 50px;
   text-align: center;
 }
-.caja-texto::placeholder{
-    color: #f12711;
+.caja-texto::placeholder {
+  color: #f12711;
 }
-.caja{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 309px;
+.caja {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 309px;
 }
 #numero-cel {
   width: 19.313rem;
@@ -90,8 +90,8 @@ body {
   background-color: #f12711;
   color: white;
 }
-#finalizar{
-    margin-top: 80px;
+#finalizar {
+  margin-top: 80px;
 }
 #boton-login {
   margin-top: 48px;
@@ -182,28 +182,62 @@ i {
   align-items: center;
   align-content: stretch;
 }
-.brand:hover{
-    background-color: transparent;
-    color: #f12711;
-    border: 1px solid #f12711;
+.brand:hover {
+  background-color: transparent;
+  color: #f12711;
+  border: 1px solid #f12711;
 }
-.buscar-nav{
-    border: 2px solid #fff;
-    background-color: transparent;
-    color: white;
-    
-     
+.buscar-nav {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: white;
 }
-.buscar-nav::placeholder{
-    color: #fff;
+.buscar-nav::placeholder {
+  color: #fff;
 }
-#encabezadoEmpresas{
+#encabezadoEmpresas {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #f12711;
 }
 
-.card-title{
+.card-title {
+  color: #f12711;
+}
+
+#productosHeader {
+  margin-top: 30px;
+  width: 100vw;
+  height: 25vh;
+}
+.imgbanner {
+  width: 360px;
+  height: 119.8px;
+}
+.rounded-circle {
+  width: 90px;
+  margin-top: 90px;
+  margin-left: 135px;
+}
+.tituloEmpresa{
+  margin-top: 70px;
+  margin-bottom: 5px;
+  color: #f12711;
+}
+.descripcionEmpresa{
+  color: #f17264;
+}
+.ms-4{
+  margin-left: 1.875rem !important;
+}
+.infoEmpresas{
+  color: #f17264;
+  border-bottom: 1px solid #f17264;
+  padding-bottom: 10px;
+  margin-right: 1.875rem
+}
+#menuEmpresas{
+  margin-top: 110px;
   color: #f12711;
 }
