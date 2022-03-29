@@ -14,9 +14,9 @@ var categoria = [
                 tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: 'wopper',
-                        imagen: '',
-                        descripcionProducto: 'aguacate',
+                        nombreProducto: 'Whopper',
+                        imagen: 'assets/img/productos/cr/bg/1.png',
+                        descripcionProducto: 'Sabrosa carne de res asada a la parrilla.',
                         precio: 'L 219.00',
                         cantidad: ''
                     },
@@ -392,7 +392,7 @@ function atrasLP3() {
 
 //Generar automaticamente las categorias
 for (let i = 0; i < categoria.length; i++) {
-    console.log(categoria[i]);
+    console.log(categoria);
     document.getElementById('categorias').innerHTML +=
         `
     <div class="categorias brand" onclick="mostrarComidas(${i})">
@@ -407,23 +407,28 @@ function mostrarComidas(index) {
 
     document.getElementById('home').style.display = "none";
     document.getElementById('comidasRapidas').style.display = "block"
+    categoriasGolbal = index;
     let categoriaSeleccionada = categoria[index];
     var restaurantesCategoria = categoria[index].comercio;
 
     document.getElementById('categoriasheader').innerHTML +=
         `
+        <div id="title" class="fixed-top">
         <i id="atras" class="fa-solid fa-arrow-left fa-lg" style="color: #F12711;"></i>
         <div id="encabezadoEmpresas">
             <p class="parrafos">${categoriaSeleccionada.nombre}</p>
             <input class="caja caja-texto" type="search" name="" id="" placeholder="Buscar">
         </div>
+        </div>
+        
     `;
     document.getElementById('comidas').innerHTML = '';
     for (let i = 0; i < restaurantesCategoria.length; i++) {
-        console.log(restaurantesCategoria[i]);
+        console.log(restaurantesCategoria);
         document.getElementById('comidas').innerHTML +=
-            `
-        <div class="col-6">
+        `
+        
+            <div class="col-6">
             <div class="card" onclick="mostrarProductos(${i})">
                 <img src=${restaurantesCategoria[i].logo} class="card-img-top" alt="...">
                 <div class="card-body">
@@ -431,11 +436,12 @@ function mostrarComidas(index) {
                 </div>
             </div>
         </div>
+       
         `;
     }
     document.getElementById('footer').innerHTML =
         `
-    <div id="barra-nav">
+    <div class="fixed-bottom" id="barra-nav">
         <div>
             <i class="fa-solid fa-house fa-xl"></i>
         </div>
@@ -448,46 +454,47 @@ function mostrarComidas(index) {
     </div>
     `;
 }
-
+var categoriasGolbal = 0;
 function mostrarProductos(index) {
     document.getElementById('comidasRapidas').style.display = "none"
     document.getElementById('productos').style.display = "block";
-    let restaurantesCategoria = categoria[index].comercio;
-    let pro = restaurantesCategoria[index].productos;
+    let restaurantesCategoria = categoria[categoriasGolbal].comercio;
+    let restaurante = restaurantesCategoria[index];
+    let prod = restaurante.productos;
 
     document.getElementById('productos').innerHTML +=
         `
-    <div id="productosHeader">
-            <img class="rounded-circle position-fixed" src=${restaurantesCategoria[index].logo} alt="">
-            <img class="imgbanner" src=${restaurantesCategoria[index].banner} alt="">
-            <p class="parrafos tituloEmpresa">${restaurantesCategoria[index].nombreComercio}</p>
-            <p class="parrafos descripcionEmpresa">${restaurantesCategoria[index].descripcion}</p>
+    <div id="productosHeader" class="fixed-top">
+            <img class="rounded-circle position-fixed" src=${restaurante.logo} alt="">
+            <img class="imgbanner" src=${restaurante.banner} alt="">
+            <p class="parrafos tituloEmpresa">${restaurante.nombreComercio}</p>
+            <p class="parrafos descripcionEmpresa">${restaurante.descripcion}</p>
             <div class="d-flex flex-row ms-4 infoEmpresas">
                 <i class="fa-regular fa-clock me-2"></i>
-                <p class="me-2 mb-0">${restaurantesCategoria[index].horaAtencion}</p>
+                <p class="me-2 mb-0">${restaurante.horaAtencion}</p>
                 <i class="fa-regular fa-star me-2"></i>
-                <p class="me-2 mb-0">${restaurantesCategoria[index].calificacion}</p>
+                <p class="me-2 mb-0">${restaurante.calificacion}</p>
                 <i class="fa-solid fa-motorcycle me-2"></i>
-                <p class="me-2 mb-0">${restaurantesCategoria[index].tiempoReparto}</p>
+                <p class="me-2 mb-0">${restaurante.tiempoReparto}</p>
             </div>
         </div>
         
     `;
-    for (let i = 0; i < pro.length; i++) {
-        console.log(pro[i]);
+    for (let i = 0; i < prod.length; i++) {
+        console.log(prod);
         document.getElementById('cardProductos').innerHTML +=
             `
-        <div class="col-12">
+        <div class="col">
                         <div class="card mb-3">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="" class="img-fluid rounded-start" alt="...">
+                                <img src=${prod[i].imagen} class="img-fluid rounded-start" alt="...">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body">
-                                  <h5 class="card-title">${pro[i].nombreProducto}</h5>
-                                  <p class="card-text">${pro[i].descripcionProducto}</p>
-                                  <p class="card-text"><small class="text-muted">${pro[i].precio}</small></p>
+                                  <h5 class="card-title">${prod[i].nombreProducto}</h5>
+                                  <p class="card-text">${prod[i].descripcionProducto}</p>
+                                  <p class="card-text"><small class="text-muted">${prod[i].precio}</small></p>
                                 </div>
                               </div>
                             </div>
@@ -496,5 +503,19 @@ function mostrarProductos(index) {
         `;
 
     }
+    document.getElementById('footer').innerHTML +=
+        `
+    <div class="fixed-bottom" id="barra-nav">
+        <div>
+            <i class="fa-solid fa-house fa-xl"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-basket-shopping fa-xl"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-user fa-xl"></i>
+        </div>
+    </div>
+    `;
 
 }
