@@ -9,9 +9,9 @@ var categoria = [
                 banner: 'assets/img/banners/cr/bkb.jpg',
                 logo: 'assets/img/logos/cr/burgerking.jpg',
                 descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion:'8:00 AM',
-                calificacion:'5.0',
-                tiempoReparto:'30 min',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
                         nombreProducto: 'wopper',
@@ -25,18 +25,18 @@ var categoria = [
                         imagen: '',
                         descripcionProducto: 'pollo',
                         precio: 'L 169.00',
-                        cantidad: '' 
+                        cantidad: ''
                     }
                 ]
             },
             {
                 nombreComercio: 'Chillis',
-                banner: '',
+                banner: 'assets/img/banners/cr/cb.jpg',
                 logo: 'assets/img/logos/cr/chillis.jpg',
                 descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion:'8:00 AM',
-                calificacion:'5.0',
-                tiempoReparto:'30 min',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
                         nombreProducto: '',
@@ -49,12 +49,12 @@ var categoria = [
             },
             {
                 nombreComercio: 'Dominos',
-                banner: '',
+                banner: 'assets/img/banners/cr/db.jpg',
                 logo: 'assets/img/logos/cr/dominos.jpg',
                 descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion:'8:00 AM',
-                calificacion:'5.0',
-                tiempoReparto:'30 min',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
                         nombreProducto: '',
@@ -67,12 +67,12 @@ var categoria = [
             },
             {
                 nombreComercio: 'Kentucky Fried Chicken',
-                banner: '',
+                banner: 'assets/img/banners/cr/kfcb.jpg',
                 logo: 'assets/img/logos/cr/kfc.jpg',
                 descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion:'8:00 AM',
-                calificacion:'5.0',
-                tiempoReparto:'30 min',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
                         nombreProducto: '',
@@ -85,12 +85,12 @@ var categoria = [
             },
             {
                 nombreComercio: 'Little Caesars',
-                banner: '',
+                banner: 'assets/img/banners/cr/lcb.jpg',
                 logo: 'assets/img/logos/cr/litllecaesars.jpg',
                 descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion:'8:00 AM',
-                calificacion:'5.0',
-                tiempoReparto:'30 min',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
                         nombreProducto: '',
@@ -103,12 +103,12 @@ var categoria = [
             },
             {
                 nombreComercio: 'Pizza Hut',
-                banner: '',
+                banner: 'assets/img/banners/cr/phb.jpg',
                 logo: 'assets/img/logos/cr/pizzahut.jpg',
                 descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion:'8:00 AM',
-                calificacion:'5.0',
-                tiempoReparto:'30 min',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
                         nombreProducto: '',
@@ -121,12 +121,12 @@ var categoria = [
             },
             {
                 nombreComercio: 'Popeyes',
-                banner: '',
+                banner: 'assets/img/banners/cr/pb.jpg',
                 logo: 'assets/img/logos/cr/popeyes.jpg',
                 descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion:'8:00 AM',
-                calificacion:'5.0',
-                tiempoReparto:'30 min',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
                         nombreProducto: '',
@@ -280,7 +280,7 @@ function esconder() {
     document.getElementById('formulario2').classList.add("visible");
     document.getElementById('home').classList.add("visible");
     document.getElementById('comidasRapidas').classList.add("visible");
-    document.getElementById('menuEmpresas').classList.add("visible");
+    document.getElementById('productos').classList.add("visible");
 }
 
 //muestra la pantalla de registro
@@ -384,16 +384,15 @@ function atrasLP3() {
 }
 
 //función para mostrar secciones
-function mostrarSeccion(seccion) {
-    document.getElementById('inicio').style.display = "block";
-
-    document.getElementById(seccion).classList.toggle('visible');
-    document.getElementById('inicio').style.display = "none";
-}
+// function mostrarSeccion(seccion) {
+//     document.getElementById('inicio').style.display = "block";
+//     document.getElementById(seccion).classList.toggle('visible');
+//     document.getElementById('inicio').style.display = "none";
+// }
 
 //Generar automaticamente las categorias
 for (let i = 0; i < categoria.length; i++) {
-    console.log(categoria);
+    console.log(categoria[i]);
     document.getElementById('categorias').innerHTML +=
         `
     <div class="categorias brand" onclick="mostrarComidas(${i})">
@@ -410,7 +409,7 @@ function mostrarComidas(index) {
     document.getElementById('comidasRapidas').style.display = "block"
     let categoriaSeleccionada = categoria[index];
     var restaurantesCategoria = categoria[index].comercio;
-    console.log(restaurantesCategoria)
+
     document.getElementById('categoriasheader').innerHTML +=
         `
         <i id="atras" class="fa-solid fa-arrow-left fa-lg" style="color: #F12711;"></i>
@@ -421,6 +420,7 @@ function mostrarComidas(index) {
     `;
     document.getElementById('comidas').innerHTML = '';
     for (let i = 0; i < restaurantesCategoria.length; i++) {
+        console.log(restaurantesCategoria[i]);
         document.getElementById('comidas').innerHTML +=
             `
         <div class="col-6">
@@ -433,15 +433,30 @@ function mostrarComidas(index) {
         </div>
         `;
     }
+    document.getElementById('footer').innerHTML =
+        `
+    <div id="barra-nav">
+        <div>
+            <i class="fa-solid fa-house fa-xl"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-basket-shopping fa-xl"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-user fa-xl"></i>
+        </div>
+    </div>
+    `;
 }
 
 function mostrarProductos(index) {
     document.getElementById('comidasRapidas').style.display = "none"
+    document.getElementById('productos').style.display = "block";
     let restaurantesCategoria = categoria[index].comercio;
     let pro = restaurantesCategoria[index].productos;
-    console.log(pro);
+
     document.getElementById('productos').innerHTML +=
-    `
+        `
     <div id="productosHeader">
             <img class="rounded-circle position-fixed" src=${restaurantesCategoria[index].logo} alt="">
             <img class="imgbanner" src=${restaurantesCategoria[index].banner} alt="">
@@ -456,18 +471,17 @@ function mostrarProductos(index) {
                 <p class="me-2 mb-0">${restaurantesCategoria[index].tiempoReparto}</p>
             </div>
         </div>
+        
     `;
-
     for (let i = 0; i < pro.length; i++) {
-        document.getElementById('menuEmpresas').innerHTML += 
-        `
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
+        console.log(pro[i]);
+        document.getElementById('cardProductos').innerHTML +=
+            `
+        <div class="col-12">
                         <div class="card mb-3">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src=${pro[i].imagen} class="img-fluid rounded-start" alt="...">
+                                <img src="" class="img-fluid rounded-start" alt="...">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body">
@@ -479,10 +493,8 @@ function mostrarProductos(index) {
                             </div>
                           </div>
                     </div>
-                </div>
-            </div>
         `;
-        
+
     }
 
 }

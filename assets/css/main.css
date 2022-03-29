@@ -220,24 +220,24 @@ i {
   margin-top: 90px;
   margin-left: 135px;
 }
-.tituloEmpresa{
+.tituloEmpresa {
   margin-top: 70px;
   margin-bottom: 5px;
   color: #f12711;
 }
-.descripcionEmpresa{
+.descripcionEmpresa {
   color: #f17264;
 }
-.ms-4{
+.ms-4 {
   margin-left: 1.875rem !important;
 }
-.infoEmpresas{
+.infoEmpresas {
   color: #f17264;
   border-bottom: 1px solid #f17264;
   padding-bottom: 10px;
-  margin-right: 1.875rem
+  margin-right: 1.875rem;
 }
-#menuEmpresas{
+#menuEmpresas {
   margin-top: 110px;
   color: #f12711;
 }
