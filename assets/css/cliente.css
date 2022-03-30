@@ -208,9 +208,11 @@ i {
 .card{
   margin-bottom: 0.625rem;
   border-color: #f12711;
+  font-size: 0.7rem !important;
 }
 .card-title {
   color: #f12711;
+  font-size: 0.7rem !important;
 }
 
 #productosHeader {
@@ -218,6 +220,7 @@ i {
   width: 100vw;
   height: 41.2291933418694vh;
   background-color: white;
+  
 }
 .imgbanner {
   width: 100vw;
@@ -235,15 +238,18 @@ i {
 }
 .descripcionEmpresa {
   color: #f17264;
+  font-size: 0.7rem !important;
 }
 .ms-4 {
   margin-left: 1.875rem !important;
 }
 .infoEmpresas {
+  text-align: center;
   color: #f17264;
   border-bottom: 0.063rem solid #f17264;
   padding-bottom: 0.625rem;
   margin-right: 1.875rem;
+  font-size: 0.7rem !important;
 }
 #menuEmpresas {
   margin-top: 6.875rem;
@@ -258,4 +264,8 @@ i {
 }
 .fixed-bottom{
   margin-bottom: 2.5rem !important;
+}
+#lupa{
+  margin-top: 3.125rem;
+  margin-right: 1.25rem;
 }
