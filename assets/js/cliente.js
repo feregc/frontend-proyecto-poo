@@ -9,20 +9,34 @@ var categoria = [
                 banner: 'assets/img/banners/cr/bkb.jpg',
                 logo: 'assets/img/logos/cr/burgerking.jpg',
                 descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion: '8:00 AM',
+                horaAtencion: '7:00 AM - 9:00 PM',
                 calificacion: '5.0',
                 tiempoReparto: '30 min',
                 productos: [
                     {
                         nombreProducto: 'Whopper',
                         imagen: 'assets/img/productos/cr/bg/1.png',
-                        descripcionProducto: 'Sabrosa carne de res asada a la parrilla.',
+                        descripcionProducto: 'res',
                         precio: 'L 219.00',
                         cantidad: ''
                     },
                     {
                         nombreProducto: 'king',
-                        imagen: '',
+                        imagen: 'assets/img/productos/cr/bg/2.png',
+                        descripcionProducto: 'pollo',
+                        precio: 'L 169.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Whopper',
+                        imagen: 'assets/img/productos/cr/bg/1.png',
+                        descripcionProducto: 'res',
+                        precio: 'L 219.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'king',
+                        imagen: 'assets/img/productos/cr/bg/2.png',
                         descripcionProducto: 'pollo',
                         precio: 'L 169.00',
                         cantidad: ''
@@ -30,19 +44,26 @@ var categoria = [
                 ]
             },
             {
-                nombreComercio: 'Chillis',
+                nombreComercio: 'Chilis',
                 banner: 'assets/img/banners/cr/cb.jpg',
                 logo: 'assets/img/logos/cr/chillis.jpg',
-                descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion: '8:00 AM',
+                descripcion: 'FAJITAS - HAMBURGUESAS - MARGARITAS - RIBS - CRISPERS',
+                horaAtencion: '11:00 AM - 9:00 PM',
                 calificacion: '5.0',
                 tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Oldtimer Con Queso',
+                        imagen: 'assets/img/productos/cr/ch/1.jpg',
+                        descripcionProducto: 'queso, pepinillos',
+                        precio: 'L. 299.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Honey Chipotle Crispers',
+                        imagen: 'assets/img/productos/cr/ch/2.png',
+                        descripcionProducto: 'Filetes de pollo',
+                        precio: 'L. 285.00',
                         cantidad: ''
                     }
                 ]
@@ -51,16 +72,23 @@ var categoria = [
                 nombreComercio: 'Dominos',
                 banner: 'assets/img/banners/cr/db.jpg',
                 logo: 'assets/img/logos/cr/dominos.jpg',
-                descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion: '8:00 AM',
+                descripcion: 'PIZZA - PAN - ALITAS',
+                horaAtencion: '8:00 AM - 9:00 PM',
                 calificacion: '5.0',
                 tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Cheese Pizza',
+                        imagen: 'assets/img/productos/cr/do/1.jpg',
+                        descripcionProducto: 'Pizza con queso',
+                        precio: 'L 120.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Deluze Pizza',
+                        imagen: 'assets/img/productos/cr/do/2.jpg',
+                        descripcionProducto: 'Pizza con todo',
+                        precio: 'L 150.00',
                         cantidad: ''
                     }
                 ]
@@ -70,15 +98,22 @@ var categoria = [
                 banner: 'assets/img/banners/cr/kfcb.jpg',
                 logo: 'assets/img/logos/cr/kfc.jpg',
                 descripcion: 'HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS',
-                horaAtencion: '8:00 AM',
+                horaAtencion: '8:00 AM - 9:00 PM',
                 calificacion: '5.0',
                 tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'K-Pack',
+                        imagen: 'assets/img/productos/cr/kfc/1.png',
+                        descripcionProducto: 'Pollo, biscuit, refresco',
+                        precio: 'L 449.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Big Box',
+                        imagen: 'assets/img/productos/cr/kfc/2.png',
+                        descripcionProducto: 'Pollo, Crunch, Papas',
+                        precio: 'L 179.00',
                         cantidad: ''
                     }
                 ]
@@ -484,7 +519,7 @@ function mostrarProductos(index) {
         console.log(prod);
         document.getElementById('cardProductos').innerHTML +=
             `
-        <div class="col">
+        <div class="col-6">
                         <div class="card mb-3">
                             <div class="row g-0">
                               <div class="col-md-4">
