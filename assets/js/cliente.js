@@ -316,6 +316,8 @@ function esconder() {
     document.getElementById('home').classList.add("visible");
     document.getElementById('comidasRapidas').classList.add("visible");
     document.getElementById('productos').classList.add("visible");
+    document.getElementById('detalleProducto').classList.add("visible");
+    
 }
 
 //muestra la pantalla de registro
@@ -517,10 +519,11 @@ function mostrarProductos(index) {
     `;
     for (let i = 0; i < prod.length; i++) {
         console.log(prod);
+        console.log(i);
         document.getElementById('cardProductos').innerHTML +=
             `
         <div class="col-6">
-                        <div class="card mb-3">
+                        <div class="card mb-3" onclick="detalleProducto(${i})">
                             <div class="row g-0">
                               <div class="col-md-4">
                                 <img src=${prod[i].imagen} class="img-fluid rounded-start" alt="...">
@@ -553,4 +556,52 @@ function mostrarProductos(index) {
     </div>
     `;
 
+}
+
+function detalleProducto(index){
+    document.getElementById('productos').style.display = "none"
+    document.getElementById('detalleProducto').style.display = "block";
+    let restaurantesCategoria = categoria[categoriasGolbal].comercio;
+    let restaurante = restaurantesCategoria[index];
+    let prod = restaurante.productos;
+    for (let j = 0; j < prod.length; j++) {
+        console.log(prod[1].nombreProducto);
+        document.getElementById('encabezadoEmpresas').innerHTML =
+        `
+        <p class="parrafos">${prod[j].nombreProducto}</p>
+            <div id="infoProducto" style="width: 100vw; margin-top: 10vh; text-align: center;">
+                <img src=${prod[j].imagen} alt="" style="width: 80vw; ">
+                <p>${prod[j].descripcionProducto}</p>
+            </div>
+        `;
+    }
+    for (let i = 0; i < prod.length; i++) {
+        document.getElementById('encabezadoEmpresas').innerHTML =
+        `
+        <div class="d-flex">
+            <i class="fa-solid fa-circle-minus fa-xl mt-3 me-2"></i>
+            <input class="caja-texto me-2" type="text" name="" id="">
+            <i class="fa-solid fa-circle-plus fa-xl mt-3"></i>
+        </div>
+        <p>${prod[i].precio}</p>
+        `;
+    }
+    document.getElementById('ordenProducto').innerHTML =
+        `
+        <input class="boton boton-Rojo" type="button" value="Agregar Orden">
+        `;
+        document.getElementById('footer').innerHTML =
+        `
+    <div class="fixed-bottom" id="barra-nav">
+        <div>
+            <i class="fa-solid fa-house fa-xl"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-basket-shopping fa-xl"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-user fa-xl"></i>
+        </div>
+    </div>
+    `;
 }
