@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+body {
+  margin: 0;
+  font-family: "Alata", sans-serif;
+}
+#pantalla-inicio {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#ec8277, #f12711);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#encabezado {
+  background-color: #f12711;
+  height: 8.156rem;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  color: white;
+}
+#atras {
+  margin-top: 3.125rem;
+  margin-left: 1.25rem;
+}
+.parrafos {
+  text-align: center;
+}
+#mensaje-registro {
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+#formulario-registro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.caja-texto {
+  height: 2.25rem;
+  border: 0.063rem solid #f12711;
+  color: #f17264;
+  border-radius: 3.125rem;
+  text-align: center;
+}
+.caja-texto::placeholder {
+  color: #f12711;
+}
+.caja {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  width: 19.313rem;
+}
+#numero-cel {
+  width: 19.313rem;
+  margin-top: 3.75rem;
+  margin-bottom: 10rem;
+}
+#check {
+  font-size: small;
+  color: #f17264;
+  margin-bottom: 1.875rem;
+}
+#logo {
+  width: 14.125rem;
+  height: 4.125rem;
+  margin-bottom: 5rem;
+  margin-top: 9rem;
+}
+.boton {
+  border: 0.031rem solid white;
+  border-radius: 3.125rem;
+  width: 13.375rem;
+  height: 3.5rem;
+  cursor: pointer;
+}
+.boton-Rojo {
+  background-color: #f12711;
+  color: white;
+}
+.boton-Rojo:hover {
+  background-color: white;
+  border: 0.063rem solid #f12711;
+  color: #f12711;
+}
+.boton-blanco {
+  background-color: white;
+  color: #f12711;
+}
+.boton-blanco:hover {
+  background-color: #f12711;
+  color: white;
+}
+#finalizar {
+  margin-top: 5rem;
+}
+#boton-login {
+  margin-top: 3rem;
+  background-color: transparent;
+  color: white;
+}
+#boton-login:hover {
+  background-color: white;
+  color: #f12711;
+}
+
+.visible {
+  display: none;
+}
+.texto {
+  width: 19.313rem;
+  margin-bottom: 1.875rem;
+  border-radius: 3.125rem;
+  text-align: center;
+  height: 2.25rem;
+}
+#formulario-registro-2 {
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#header {
+  width: 100vw;
+  height: 11.875rem;;
+  background-color: #f12711;
+}
+#plogo {
+  padding: 0;
+}
+#logo1 {
+  width: 8.188rem;
+  height: 2.375rem;
+  margin-top: 2.5rem;
+}
+#saludo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#titulo1 {
+  padding: 0px;
+  margin-top: 0.313rem;
+  margin-bottom: 0.313rem;
+  color: #f12711;
+}
+#categorias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.categorias {
+  background-color: #f12711;
+  width: 18.938rem;
+  height: 6.875rem;
+  border-radius: 1.875rem;
+  margin: 0.625rem;;
+  color: white;
+}
+#barra-nav {
+  background-color: white;
+  margin: auto;
+  margin-top: 1.25rem;
+  width: 18.75rem;
+  height: 3.938rem;
+  border: 0.063rem solid #f12711;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #f12711;
+}
+#title{
+  background-color: white;
+}
+i {
+  margin: 0;
+}
+.brand {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+}
+.brand:hover {
+  background-color: transparent;
+  color: #f12711;
+  border: 0.063rem solid #f12711;
+}
+.buscar-nav {
+  border: 0.125rem solid #fff;
+  background-color: transparent;
+  color: white;
+}
+.buscar-nav::placeholder {
+  color: #fff;
+}
+#encabezadoEmpresas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f12711;
+}
+.card{
+  margin-bottom: 0.625rem;
+  border-color: #f12711;
+  font-size: 0.7rem !important;
+}
+.card-title {
+  color: #f12711;
+  font-size: 0.7rem !important;
+}
+
+#productosHeader {
+  margin-top: 1.875rem;
+  width: 100vw;
+  height: 41.2291933418694vh;
+  background-color: white;
+  
+}
+.imgbanner {
+  width: 100vw;
+  height: 7.488rem;
+}
+.rounded-circle {
+  width: 5.625rem;
+  margin-top: 5.625rem;
+  margin-left: 8.438rem;
+}
+.tituloEmpresa {
+  margin-top: 4.375rem;
+  margin-bottom: 0.313rem;;
+  color: #f12711;
+}
+.descripcionEmpresa {
+  color: #f17264;
+  font-size: 0.7rem !important;
+}
+.ms-4 {
+  margin-left: 1.875rem !important;
+}
+.infoEmpresas {
+  text-align: center;
+  color: #f17264;
+  border-bottom: 0.063rem solid #f17264;
+  padding-bottom: 0.625rem;
+  margin-right: 1.875rem;
+  font-size: 0.7rem !important;
+}
+#menuEmpresas {
+  margin-top: 6.875rem;
+  color: #f12711;
+}
+.mt-6{
+  margin-top: 11.25rem !important;
+  margin-bottom: 7.5rem !important;
+}
+.mt-7{
+  margin-top: 21.875rem !important;
+}
+.fixed-bottom{
+  margin-bottom: 2.5rem !important;
+}
+#lupa{
+  margin-top: 3.125rem;
+  margin-right: 1.25rem;
+}

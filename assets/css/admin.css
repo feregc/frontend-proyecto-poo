@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+body {
+  margin: 0;
+  font-family: "Alata", sans-serif;
+}
+.header{
+    width: 100vw;
+    height: 15vh;
+    background-color: #f12711;
+    color: white;
+}
+#logoMain{
+    width: 10vw;  
+}
+#encabezadoMain{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 12vh;
+}
+#mainFormulario{
+    background-color: #f12711;
+    color: white;
+    height: 50vh;
+    width: 40vw;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    margin-top: 27vh;
+}
+.mainImput{
+    border-radius: 3.125rem;
+    width: 25vw;
+    height: 5vh;
+    border: 0;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.mainImput::placeholder{
+    color: #ff4b37;
+}
+.mainButton{
+    margin: 2vh;
+    width: 15vw;
+    height: 6vh;
+    border: 0;
+    border-radius: 3.125rem;
+    background-color: white;
+    color: #f12711;
+}
+.mainButton:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff
+}
+.menuButton{
+    margin: 2vh;
+    width: 25vw;
+    height: 8vh;
+    border: 0;
+    background-color: transparent;
+    border-radius: 3.125rem;
+    color: #f12711;
+    border: 1px solid #f12711;
+}
+#footer{
+    background-color: #C4C4C4;
+    width: 100vw;
+    height: 10vh;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33vh;
+}
+.cuadro{
+    height: 50vh;
+    background-color: #C4C4C4;
+    width: 85vw;
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table{
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+}
