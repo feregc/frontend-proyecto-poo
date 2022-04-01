@@ -85,7 +85,7 @@ var categoria = [
                         cantidad: ''
                     },
                     {
-                        nombreProducto: 'Deluze Pizza',
+                        nombreProducto: 'Deluxe Pizza',
                         imagen: 'assets/img/productos/cr/do/2.jpg',
                         descripcionProducto: 'Pizza con todo',
                         precio: 'L 150.00',
@@ -128,10 +128,17 @@ var categoria = [
                 tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Pizza de Batman',
+                        imagen: 'assets/img/productos/cr/lc/batmanp.jpg',
+                        descripcionProducto: 'Pizza Especial de Batman',
+                        precio: 'L 139.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Calzone',
+                        imagen: 'assets/img/productos/cr/lc/calzone.jpg',
+                        descripcionProducto: 'Calzone de Jamón',
+                        precio: 'L 98.00',
                         cantidad: ''
                     }
                 ]
@@ -146,10 +153,17 @@ var categoria = [
                 tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Pizza 4 Estaciones',
+                        imagen: 'assets/img/productos/cr/ph/4est.jpg',
+                        descripcionProducto: 'Jamón,Peperonni,Queso y Pa',
+                        precio: 'L 198.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Pizza California',
+                        imagen: 'assets/img/productos/cr/ph/pizzcali.png',
+                        descripcionProducto: 'Pizza California',
+                        precio: 'L. 197.00',
                         cantidad: ''
                     }
                 ]
@@ -164,10 +178,17 @@ var categoria = [
                 tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Big Pack',
+                        imagen: 'assets/img/productos/cr/pop/bigpack.jpg',
+                        descripcionProducto: 'Big Pack 12 Piezas',
+                        precio: 'L. 569.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Flash Sandwich',
+                        imagen: 'assets/img/productos/cr/pop/flashsandwich.jpg',
+                        descripcionProducto: 'Sandwich de Pollo',
+                        precio: 'L. 156.00',
                         cantidad: ''
                     }
                 ]
@@ -180,90 +201,150 @@ var categoria = [
         comercio: [
             {
                 nombreComercio: 'Cinnabon',
-                banner: '',
+                banner: 'assets/img/banners/cp/cbb.jpg',
                 logo: 'assets/img/logos/cp/cinnabon.jpg',
                 descripcion: 'CINNAMON ROLLS - CAFÉ',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Cinnabon',
+                        imagen: 'assets/img/productos/cp/cinnabon/cinabbon.jpg',
+                        descripcionProducto: 'Delicioso Cinnabon',
+                        precio: 'L. 139.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'ChocoBon',
+                        imagen: 'assets/img/productos/cp/cinnabon/choco.jpg',
+                        descripcionProducto: 'ChocoBon de Chocolate',
+                        precio: 'L.165.00',
                         cantidad: ''
                     }
                 ]
             },
             {
                 nombreComercio: 'Basilios',
-                banner: '',
+                banner: 'assets/img/banners/cp/bsb.jpg',
                 logo: 'assets/img/logos/cp/basilios.jpg',
                 descripcion: 'CINNAMON ROLLS - CAFÉ',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'ChocoSemita',
+                        imagen: 'assets/img/productos/cp/basilios/chocosem.jpg',
+                        descripcionProducto: 'Semita de Chocolate',
+                        precio: 'L 89.00',
+                        cantidad: ''
+                    },
+                      {
+                        nombreProducto: 'Pan Rustico',
+                        imagen: 'assets/img/productos/cp/basilios/panrust.jpg',
+                        descripcionProducto: 'Delicioso Pan Rustico',
+                        precio: 'L 182.00',
                         cantidad: ''
                     }
                 ]
             },
             {
                 nombreComercio: 'Churrin Churron',
-                banner: '',
+                banner: 'assets/img/banners/cp/chcb.jpg',
                 logo: 'assets/img/logos/cp/churrin.jpg',
                 descripcion: 'CINNAMON ROLLS - CAFÉ',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Churro Clasico',
+                        imagen: 'assets/img/productos/cp/churrin/churr.jpg',
+                        descripcionProducto: 'Delicioso Churro Clasico',
+                        precio: 'L 58.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Sundae',
+                        imagen: 'assets/img/productos/cp/churrin/sundae.jpg',
+                        descripcionProducto: 'Sundae de Vainilla',
+                        precio: 'L 139.00',
                         cantidad: ''
                     }
                 ]
             },
             {
                 nombreComercio: 'Dunkin Donuts',
-                banner: '',
+                banner: 'assets/img/banners/cp/ddb.jpg',
                 logo: 'assets/img/logos/cp/donkin.jpg',
-                descripcion: 'CINNAMON ROLLS - CAFÉ',
+                descripcion: 'DONUTS - CAFÉ',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Dunkin Cafe',
+                        imagen: 'assets/img/productos/cp/dunkin/dunkincake.jpg',
+                        descripcionProducto: '4 Lattes + Cake',
+                        precio: 'L 189.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Flatbread Pizza',
+                        imagen: 'assets/img/productos/cp/dunkin/flatpizz.jpg',
+                        descripcionProducto: 'Pizza con Corteza Plana',
+                        precio: 'L 99.00',
                         cantidad: ''
                     }
                 ]
             },
             {
                 nombreComercio: 'Espresso Americano',
-                banner: '',
+                banner: 'assets/img/banners/cp/eAB.jpg',
                 logo: 'assets/img/logos/cp/espresso.jpg',
                 descripcion: 'CINNAMON ROLLS - CAFÉ',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Cream Lachino',
+                        imagen: 'assets/img/productos/cp/expresso/leamlach.png',
+                        descripcionProducto: 'Coconut Cream Lachino',
+                        precio: 'L 110.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Capuchinno',
+                        imagen: 'assets/img/productos/cp/expresso/capu.jpg',
+                        descripcionProducto: 'Capuchino con Vainila',
+                        precio: 'L 150.00',
                         cantidad: ''
                     }
                 ]
             },
             {
                 nombreComercio: 'Pan y Más',
-                banner: '',
+                banner: 'assets/img/banners/cp/pymb.jpg',
                 logo: 'assets/img/logos/cp/panymas.jpg',
                 descripcion: 'CINNAMON ROLLS - CAFÉ',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Pastel Personalizado',
+                        imagen: 'assets/img/productos/cp/pan/1.jpg',
+                        descripcionProducto: 'Pastel Personalizado',
+                        precio: 'L 150.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Cupcakes',
+                        imagen: 'assets/img/productos/cp/pan/2.jpg',
+                        descripcionProducto: 'Cupcakes de Fresas',
+                        precio: 'L 198.00',
                         cantidad: ''
                     }
                 ]
@@ -273,12 +354,22 @@ var categoria = [
                 banner: '',
                 logo: 'assets/img/logos/cp/tutis.jpg',
                 descripcion: 'CINNAMON ROLLS - CAFÉ',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: 'Pistachio Lovers',
+                        imagen: 'assets/img/productos/cp/tutis/froyo.jpg',
+                        descripcionProducto: 'Pitachio Froyo Sundae',
+                        precio: 'L 55.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Froyo Cup Self-Serve',
+                        imagen: 'assets/img/productos/cp/tutis/froyocup.jpg',
+                        descripcionProducto: 'Cup de Vainilla',
+                        precio: 'L 67.00',
                         cantidad: ''
                     }
                 ]
@@ -294,16 +385,209 @@ var categoria = [
                 banner: '',
                 logo: 'assets/img/logos/cg/nifunifa.jpg',
                 descripcion: 'CARNE - PARRILLADA - ARAGENTINA - CHORIZO',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
                 productos: [
                     {
-                        nombreProducto: '',
-                        imagen: '',
-                        descripcionProducto: '',
-                        precio: '',
+                        nombreProducto: '8 Boneless Barbacoa',
+                        imagen: 'assets/img/productos/cg/nifu-nifa/bonel.jpg',
+                        descripcionProducto: 'Deliciosos Boneless Barbacoa',
+                        precio: 'L 298.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Mini Hamburguesas',
+                        imagen: 'assets/img/productos/cg/nifu-nifa/hambu.jpg',
+                        descripcionProducto: 'Mini-Hamburguesas con Cebolla',
+                        precio: 'L 160.00',
                         cantidad: ''
                     }
                 ]
+            },
+            {
+                nombreComercio: 'Copa Café',
+                banner: 'assets/img/banners/cg/ccb.jpg',
+                logo: 'assets/img/logos/cg/copacafe.jpg',
+                descripcion: 'NUEVOS - FRESCOS - SABORES',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
+                productos: [
+                    {
+                        nombreProducto: 'Lasagna de Pollo',
+                        imagen: 'assets/img/productos/cg/copa_cafe/lsgn.jpg',
+                        descripcionProducto: 'Deliciosa Lasagna de Pollo',
+                        precio: 'L 169.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Sunday Brunch',
+                        imagen: 'assets/img/productos/cg/copa_cafe/sub.jpg',
+                        descripcionProducto: 'Sunday Brunch con Aguacate y Frijoles',
+                        precio: 'L 250.00',
+                        cantidad: ''
+                    }
+                ]
+
+            },
+            {
+                nombreComercio: 'El Morito',
+                banner: 'assets/img/banners/cg/emb.png',
+                logo: 'assets/img/logos/cg/elmorito.jpg',
+                descripcion: 'SEAFOOD',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
+                productos: [
+                    {
+                        nombreProducto: 'Camarones Empanizados',
+                        imagen: 'assets/img/productos/cg/el_morito/camarones.jpg',
+                        descripcionProducto: 'Exquisitos Camarones Empanizados',
+                        precio: 'L 365.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Sopa de Cangrejo',
+                        imagen: 'assets/img/productos/cg/el_morito/sopac.jpg',
+                        descripcionProducto: 'Exquisita Sopa de cangrejo con ese riquísimo sabor de El Morito',
+                        precio: 'L 210.00',
+                        cantidad: ''
+                    }
+                ]
+
+            },{
+                nombreComercio: 'La Creperia',
+                banner: 'assets/img/banners/cg/cpb.jpg',
+                logo: 'assets/img/logos/cg/lacreperia.jpg',
+                descripcion: 'Crepas,Hamburguesas,Ensaladas',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
+                productos: [
+                    {
+                        nombreProducto: 'Desayuno Tipico',
+                        imagen: 'assets/img/productos/cg/la_creperia/desayuno.jpg',
+                        descripcionProducto: 'Exquisitos Desayuno Tipico',
+                        precio: 'L 145.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Steak de Pollo Chipotle',
+                        imagen: 'assets/img/productos/cg/la_creperia/steak.jpg',
+                        descripcionProducto: 'Steak De Pollo',
+                        precio: 'L 210.00',
+                        cantidad: ''
+                    }
+                ]
+
+            },
+            
+            {
+                nombreComercio: 'La Estancia',
+                banner: 'assets/img/banners/cg/laeb.jpg',
+                logo: 'assets/img/logos/cg/laestancia.jpg',
+                descripcion: '',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
+                productos: [
+                    {
+                        nombreProducto: 'Carne Asada',
+                        imagen: 'assets/img/productos/cg/la-estancia/carne.jpg',
+                        descripcionProducto: 'Carne Asada Barbacoa',
+                        precio: 'L 245.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Carne Marinada',
+                        imagen: 'assets/img/productos/cg/la-estancia/carnemari.jpg',
+                        descripcionProducto: 'Deliciosa Carne Marinada',
+                        precio: 'L 199.00',
+                        cantidad: ''
+                    }
+                ]
+
+            },
+            {
+                nombreComercio: 'Nau Sushi',
+                banner: 'assets/img/banners/cg/naub.jpg',
+                logo: 'assets/img/logos/cg/nau.jpg',
+                descripcion: '',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
+                productos: [
+                    {
+                        nombreProducto: 'Cheesecake',
+                        imagen: 'assets/img/productos/cg/nau/cheese.jpg',
+                        descripcionProducto: 'CheeseCake con Helado',
+                        precio: 'L 91.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Sushi',
+                        imagen: 'assets/img/productos/cg/nau/sushi.jpg',
+                        descripcionProducto: 'Sushi Marinado',
+                        precio: 'L 325.00',
+                        cantidad: ''
+                    }
+                ]
+
+            },
+            {
+                nombreComercio: 'Vie de France',
+                banner: 'assets/img/banners/cg/vfb.jpg',
+                logo: 'assets/img/logos/cg/viedefrance.jpg',
+                descripcion: '',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
+                productos: [
+                    {
+                        nombreProducto: 'Desayuno Tipico',
+                        imagen: 'assets/img/productos/cg/vie-de-france/desyt.jpg',
+                        descripcionProducto: 'Delicioso Desayuno',
+                        precio: 'L 100.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Croissants',
+                        imagen: 'assets/img/productos/cg/vie-de-france/croissants.jpg',
+                        descripcionProducto: 'Croissants de Jamón',
+                        precio: 'L 78.00',
+                        cantidad: ''
+                    }
+                ]
+
+            },
+            {
+                nombreComercio: "Wafflo's",
+                banner: 'assets/img/banners/cg/wwb.jpg',
+                logo: 'assets/img/logos/cg/wafflos.jpg',
+                descripcion: '',
+                horaAtencion: '8:00 AM',
+                calificacion: '5.0',
+                tiempoReparto: '30 min',
+                productos: [
+                    {
+                        nombreProducto: 'Caramel Lotus Biscoff',
+                        imagen: 'assets/img/productos/cg/wafflos/caramel.jpg',
+                        descripcionProducto: 'Helado con Galleta y Vainilla',
+                        precio: 'L 91.00',
+                        cantidad: ''
+                    },
+                    {
+                        nombreProducto: 'Crispy Chocolate Wafflo',
+                        imagen: 'assets/img/productos/cg/wafflos/choco.jpg',
+                        descripcionProducto: 'Croissants de Jamón',
+                        precio: 'L 51.00',
+                        cantidad: ''
+                    }
+                ]
+
             }
+            
         ]
     }
 ]
@@ -514,7 +798,7 @@ function mostrarProductos(index) {
                 <i class="fa-solid fa-motorcycle me-2"></i>
                 <p class="me-2 mb-0">${restaurante.tiempoReparto}</p>
             </div>
-        </div>
+    </div>
         
     `;
     for (let i = 0; i < prod.length; i++) {
@@ -559,49 +843,13 @@ function mostrarProductos(index) {
 }
 
 function detalleProducto(index){
+    console.log('el indice que recibe es ', index)
     document.getElementById('productos').style.display = "none"
     document.getElementById('detalleProducto').style.display = "block";
     let restaurantesCategoria = categoria[categoriasGolbal].comercio;
     let restaurante = restaurantesCategoria[index];
     let prod = restaurante.productos;
-    for (let j = 0; j < prod.length; j++) {
-        console.log(prod[1].nombreProducto);
-        document.getElementById('encabezadoEmpresas').innerHTML =
-        `
-        <p class="parrafos">${prod[j].nombreProducto}</p>
-            <div id="infoProducto" style="width: 100vw; margin-top: 10vh; text-align: center;">
-                <img src=${prod[j].imagen} alt="" style="width: 80vw; ">
-                <p>${prod[j].descripcionProducto}</p>
-            </div>
-        `;
-    }
-    for (let i = 0; i < prod.length; i++) {
-        document.getElementById('encabezadoEmpresas').innerHTML =
-        `
-        <div class="d-flex">
-            <i class="fa-solid fa-circle-minus fa-xl mt-3 me-2"></i>
-            <input class="caja-texto me-2" type="text" name="" id="">
-            <i class="fa-solid fa-circle-plus fa-xl mt-3"></i>
-        </div>
-        <p>${prod[i].precio}</p>
-        `;
-    }
-    document.getElementById('ordenProducto').innerHTML =
-        `
-        <input class="boton boton-Rojo" type="button" value="Agregar Orden">
-        `;
-        document.getElementById('footer').innerHTML =
-        `
-    <div class="fixed-bottom" id="barra-nav">
-        <div>
-            <i class="fa-solid fa-house fa-xl"></i>
-        </div>
-        <div>
-            <i class="fa-solid fa-basket-shopping fa-xl"></i>
-        </div>
-        <div>
-            <i class="fa-solid fa-user fa-xl"></i>
-        </div>
-    </div>
-    `;
+    console.log('el prod que recibe es ', prod[index]);
+    let actual = prod[i];
+    console.log(actual)
 }
