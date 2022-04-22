@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+body {
+    margin: 0;
+    font-family: "Alata", sans-serif;
+}
+.nav{
+    position: sticky!important;
+}
+.header {
+    width: 100vw;
+    height: 15vh;
+    background-color: #f12711 !important;
+    color: white;
+}
+#logoMain {
+    width: 10vw;
+}
+#encabezadoMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+#mainFormulario {
+    margin-top: 13vh;
+    background-color: #f12711;
+    color: white;
+    height: 50vh;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+.mainImput {
+    border-radius: 3.125rem;
+    width: 25vw;
+    height: 5vh;
+    border: 1px solid #f12711;
+
+    text-align: center;
+    margin-bottom: 16px;
+}
+.mainImput::placeholder {
+    color: #ff4b37;
+}
+.mainButton {
+    margin: 2vh;
+    width: 15vw;
+    height: 6vh;
+    border: 0;
+    border-radius: 3.125rem;
+    background-color: white;
+    color: #f12711;
+}
+.mainButton:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+}
+.menuButton {
+    margin: 2vh;
+    width: 25vw;
+    height: 8vh;
+    border: 0;
+    background-color: transparent;
+    border-radius: 3.125rem;
+    color: #f12711;
+    border: 1px solid #f12711;
+}
+#footer {
+    background-color: #c4c4c4;
+    width: 100vw;
+    height: 10vh;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 22vh;
+}
+.table {
+    height: 40vh;
+    max-height:fit-content;
+}
+
+
+.buttonTable {
+    margin: 0.5vh;
+    width: 10vw;
+    height: 5vh;
+    border: 0;
+    background-color: transparent;
+    border-radius: 3.125rem;
+    color: #f12711;
+    border: 1px solid #f12711;
+}
+.buttonTable:hover {
+    background-color: #f12711;
+    color: white;
+}
+.buttonEmpresas {
+	margin-right: 2vw;
+    width: 13vw;
+    height: 6vh;
+    border: 0;
+    background-color: #f12711;
+    border-radius: 3.125rem;
+    color: #fff;
+    border: 1px solid #f12711;
+}
+.abajo{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+    margin-top: 3vh;
+}
+#motoristas{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.card{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.titulo{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+.form-select{
+    height: 50vh;
+    max-height: 50vh;
+}
+
+.modal-header{
+    background-color: #f12711;
+    color: #fff;
+}
+.visible {
+    display: none;
+  }
