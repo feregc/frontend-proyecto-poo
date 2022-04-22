@@ -1,0 +1,20 @@
+[
+    {
+        "idCategoria":"1",
+        "nombreCategoria":"Comida Rápida",
+        "icono":"fa-burger",
+        "empresas":[1,2,3,4,5,6,7]
+    },
+    {
+        "idCategoria":"2",
+        "nombreCategoria":"Cafés y Panaderías",
+        "icono":"fa-mug-hot",
+        "empresas":[8,9,10,11,12,13,14]
+    },
+    {
+        "idCategoria":"3",
+        "nombreCategoria":"Comida Gourmet",
+        "icono":"fa-utensils",
+        "empresas":[15,16,17,18,19,20]
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "idEmpresa":"1",
+        "nombreEmpresa":"Burger King HN",
+        "banner":"assets/img/banners/cr/bkb.jpg",
+        "logo":"assets/img/logos/cr/burgerking.jpg",
+        "descripcion":"HAMBURGUESAS - PAPAS - NUGGETS - DESAYUNOS",
+        "horaAtencion":"8:00 AM",
+        "calificacion":"5.0",
+        "tiempoReparto":"30 min",
+        "productos":[1,2]
+    }
+]
