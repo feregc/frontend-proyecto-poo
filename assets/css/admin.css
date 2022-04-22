@@ -35,7 +35,8 @@ body {
     border-radius: 3.125rem;
     width: 25vw;
     height: 5vh;
-    border: 0;
+    border: 1px solid #f12711;
+
     text-align: center;
     margin-bottom: 16px;
 }
@@ -138,3 +139,6 @@ body {
     background-color: #f12711;
     color: #fff;
 }
+.visible {
+    display: none;
+  }

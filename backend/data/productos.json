@@ -4,15 +4,13 @@
         "nombreProducto": "Whopper",
         "imagen": "assets/img/productos/cr/bg/1.png",
         "descripcionProducto": "Sabrosa carne de res asada a la parrilla.",
-        "precio": "L 219.00",
-        "cantidad": ""
+        "precio": "L 219.00"
     },
     {
         "idProducto":"2",
         "nombreProducto": "king",
         "imagen": "",
         "descripcionProducto": "pollo",
-        "precio": "L 169.00",
-        "cantidad": ""
+        "precio": "L 169.00"
     }
 ]

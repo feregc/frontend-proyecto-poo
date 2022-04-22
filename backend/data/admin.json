@@ -1,0 +1,9 @@
+[
+    {
+        "idAdmin":"123",
+        "nombreAdmin":"Nombre 1",
+        "apellidoAdmin":"Nombre 1",
+        "correo":"nombre1@gmail.com",
+        "contrasena":"asd.456"
+    }
+]
