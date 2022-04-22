@@ -2,65 +2,312 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Turbo</title>
-  <link rel="shortcut icon" href="assets/img/tblanca.png" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="assets/css/admin.css" />
-  <script src="https://kit.fontawesome.com/00a121187e.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Turbo</title>
+	<link rel="shortcut icon" href="assets/img/tblanca.png" type="image/x-icon" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+	<link rel="stylesheet" href="assets/css/admin.css" />
+	<script src="https://kit.fontawesome.com/00a121187e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  
-  <!-- Formulario Inicio Sesion -->
-  <!-- <section id="mainAdmin">
-        <div class="header fixed-top" id="encabezadoMain">
-    <img id="logoMain" src="assets/img/LOGO BLANCO.png" alt="">
-    <a href="">Ayuda</a>
-  </div>
-        <div id="mainFormulario">
-            <p>Inicio de Sesión</p>
-            <p>Correo Electrónico o Usuario</p>
-            <input class="mainImput" type="text" name="" id="emailAdmin" placeholder="username or email">
-            <p>Contraseña</p>
-            <input class="mainImput" type="password" name="" id="passwordAdmin" placeholder="password">
-            <input class="mainButton" type="button" value="Iniciar Sesión">
-        </div>
-    </section> -->
+	<nav class="navbarnavbar-expand-lg navbar-light bg-light header" id="encabezadoMain">
+		<img id="logoMain" src="assets/img/LOGO BLANCO.png" alt="" />
+		<i class="fa-regular fa-circle-user fa-2xl"></i>
+	</nav>
 
-  <!-- Menu de opciones que puede realizar el Administradores -->
-  <!-- <section id="menuAdmin">
-        <div class="header fixed-top" id="encabezadoMain">
-        <img id="logoMain" src="assets/img/LOGO BLANCO.png" alt="">
-        <i class="fa-regular fa-circle-user fa-2xl"></i>
-  </div>
-        <div id="menu">
-            <input class="menuButton" type="button" value="Administrar Empresas">
-            <input class="menuButton" type="button" value="Administrar Motorista">
-            <input class="menuButton" type="button" value="Asignar Orden">
-        </div>
-    </section> -->
 
-  <section id="adminEmpresas">
-    <div class="header fixed-top" id="encabezadoMain">
-      <img id="logoMain" src="assets/img/LOGO BLANCO.png" alt="">
-      <i class="fa-regular fa-circle-user fa-2xl"></i>
-    </div>
-    <div class="cuadro">
-      <table>
-        as
-      </table>
-    </div>
-  </section>
+	<div id="contenido">
+		<!-- Formulario Inicio Sesion -->
+		<section id="mainAdmin">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-6" id="mainFormulario">
+						<p>Inicio de Sesión</p>
+						<p>Correo Electrónico o Usuario</p>
+						<input class="mainImput" type="text" name="" id="emailAdmin" placeholder="username or email">
+						<p>Contraseña</p>
+						<input class="mainImput" type="password" name="" id="passwordAdmin" placeholder="password">
+						<input class="mainButton" type="button" value="Iniciar Sesión" onclick="abrirMenu()">
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <div class="fixed-bottom" id="footer">
-  </div>
-  <script src="assets/js/admin.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+		<!-- Menu de opciones que puede realizar el Administradores -->
+		<section id="menuAdmin">
+		</section>
+
+		<!-- administrar empresas: agregar, editar o eliminar una empresa-->
+		<section id="adminEmpresas">
+		</section>
+
+
+		<!-- Pantalla principal de administrar motoristas -->
+		<section id="adminMotoristas">
+		</section>
+
+		<section id="adminOrdenes" >
+		</section>
+
+
+		<!-- zona de modales -->
+
+		<!-- Modal Agregar empresas-->
+		<div class="modal fade" id="agregarEmpresas" tabindex="-1" aria-labelledby="agregarEmpresasLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="agregarEmpresasLabel">Agregar Empresa</h5>
+					</div>
+					<div class="modal-body">
+						<div class="contanier d-flex justify-content-center">
+							<div class="row d-flex justify-content-center">
+								<div class="col-12">
+									<p>Nombre</p>
+									<input id="nombreEmpresa" placeholder="Ingrese Nombre" class="mainImput"
+										type="text">
+									<p>Descripcion</p>
+									<input id="descripcionEmpresa" placeholder="Ingrese Descripcion" class="mainImput"
+										type="text">
+									<p>Banner</p>
+									<select id="bannerEmpresa" class="mainImput">
+										<option value="">1</option>
+										<option value="">1</option>
+										<option value="">1</option>
+									</select>
+									<p>Logo</p>
+									<select id="logoEmpresa" class="mainImput">
+										<option value="">1</option>
+										<option value="">1</option>
+										<option value="">1</option>
+									</select>
+									<p>Hora de atención</p>
+									<input id="horaAtencionEmpresa" placeholder="Ingrese Hora de Atencion"
+										class="mainImput" type="text">
+									<p>Calificación</p>
+									<input id="calificaionEmpresa" placeholder="Ingrese Calificacion" class="mainImput"
+										type="text">
+									<p>Tiempo de Reparto</p>
+									<input id="tiempoRepartoEmpresa" placeholder="Ingrese Tiempo de Reparto"
+										class="mainImput" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn buttonEmpresas" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn buttonEmpresas">Guardar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Eliminar empresas-->
+		<div class="modal fade" id="eliminarEmpresa" tabindex="-1" aria-labelledby="eliminarEmpresaLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="eliminarEmpresaLabel">Eliminar Empresa</h5>
+					</div>
+					<div class="modal-body">
+						<div class="container d-flex justify-content-center">
+							<div class="row d-flex justify-content-center">
+								<div class="col-12">
+									<p>Ingrese el código de la empresa</p>
+									<input id="idEmpresa" placeholder="Ingrese Id de la Empresa" class="mainImput" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn buttonEmpresas" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn buttonEmpresas">Eliminar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- editar empresa -->
+		<div class="modal fade" id="editarEmpresa" tabindex="-1" aria-labelledby="editarEmpresaLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="editarEmpresaLabel">Editar Empresa</h5>
+					</div>
+					<div class="modal-body">
+						<br>
+						<h4>Productos</h4>
+						<div class="container">
+							<div id="productosAdmin" class="row">
+								<div class="col-12">
+									<select class="form-select" multiple aria-label="multiple select example">
+										<option value="1">Producto 1</option>
+										<option value="2">Producto 2</option>
+										<option value="3">Producto 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="abajo">
+							<button class="buttonEmpresas float-end" data-bs-target="#agregarProductos"
+								data-bs-toggle="modal">Agregar Producto</button>
+							<button class="buttonEmpresas float-end" data-bs-target="#eliminarProducto"
+								data-bs-toggle="modal">Eliminar Producto</button>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn buttonEmpresas" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn buttonEmpresas">Guardar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Agregar Producto-->
+		<div class="modal fade" id="agregarProductos" tabindex="-1" aria-labelledby="agregarProductosLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="agregarProductosLabel">Agregar Producto</h5>
+					</div>
+					<div class="modal-body">
+						<div class="contanier d-flex justify-content-center">
+							<div class="row d-flex justify-content-center">
+								<div class="col-12">
+									<p>Nombre</p>
+									<input id="nombreProducto" placeholder="Ingrese Nombre" class="mainImput"
+										type="text">
+									<p>Descripcion</p>
+									<input id="descripcionProducto" placeholder="Ingrese Descripcion" class="mainImput"
+										type="text">
+									<p>Imagen</p>
+									<select id="imagenProducto" class="mainImput">
+										<option value="">1</option>
+										<option value="">1</option>
+										<option value="">1</option>
+									</select>
+									<p>Precio</p>
+									<input id="precioProducto" placeholder="Ingrese el precio"
+										class="mainImput" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn buttonEmpresas" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn buttonEmpresas">Guardar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal eliminar Productos-->
+		<div class="modal fade" id="eliminarProducto" tabindex="-1" aria-labelledby="eliminarProductoLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="eliminarProductoLabel">Eliminar producto</h5>
+					</div>
+					<div class="modal-body">
+						<div class="container d-flex justify-content-center">
+							<div class="row d-flex justify-content-center">
+								<div class="col-12">
+									<p>Ingrese el código del producto</p>
+									<input id="idProducto" placeholder="Ingrese Id del Producto" class="mainImput" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn buttonEmpresas" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn buttonEmpresas">Eliminar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- agregar motorista -->
+		<div class="modal fade" id="agregarMotorista" tabindex="-1" aria-labelledby="agregarMotoristaLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="agregarMotoristaLabel">Agregar Empresa</h5>
+					</div>
+					<div class="modal-body">
+						<div class="container d-flex justify-content-center">
+							<div class="row d-flex justify-content-center">
+								<div class="col-12">
+									<p>Ingrese el código de la empresa</p>
+									<input id="nombreMotorista" placeholder="Ingrese nombre" class="mainImput" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn buttonEmpresas" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn buttonEmpresas">Guardar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- agregar motorista -->
+		<div class="modal fade" id="detalleOrden" tabindex="-1" aria-labelledby="detalleOrdenLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="detalleOrdenLabel">Agregar Empresa</h5>
+					</div>
+					<div class="modal-body">
+						<div class="container d-flex justify-content-center">
+							<div class="row d-flex justify-content-center">
+								<div class="col-12">
+									<p>Ingrese el código de la empresa</p>
+									<input id="" placeholder="Ingrese Id de la Empresa" class="mainImput" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn buttonEmpresas" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn buttonEmpresas">Guardar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- agregar motorista -->
+		<div class="modal fade" id="asignarMotorista" tabindex="-1" aria-labelledby="asignarMotoristaLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="asignarMotoristaLabel">Asignar Empresa</h5>
+					</div>
+					<div class="modal-body">
+						<input class="mainImput" type="text">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn buttonEmpresas" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn buttonEmpresas">Guardar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/js/admin.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"></script>
 </body>
 
 </html>

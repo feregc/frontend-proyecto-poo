@@ -1,0 +1,11 @@
+[
+    {
+        "idCliente":"1",
+        "nombreCliente":"nombre 1",
+        "apellidoCliente":"apellido 1",
+        "telefono":"9082-0980",
+        "correo":"nombreap1@gmail.com",
+        "direccion":"tgu",
+        "ordenes":[1, 3]
+    }
+]
